@@ -10,8 +10,8 @@
   contactNavItem.addEventListener('click', showHideContactBar);
 
   function setActiveColor (e) {
-    for (let i = 0; i < navItems.length; i++) {
-      navItems[i].classList.remove('active');
+    for (const navItem of navItems) {
+      navItem.classList.remove('active');
     }
 
     e.target.classList.add('active');
